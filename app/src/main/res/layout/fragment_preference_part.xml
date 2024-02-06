@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.preference_part">
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/AllcontentsLayout"
+            android:layout_width="414dp"
+            android:layout_height="410dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/imgiconlayout"
+                android:layout_width="414dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/men_img"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/men"
+                        android:visibility="visible"
+                        tools:src="@drawable/men"
+                        tools:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chartLayout"
+                android:layout_width="414dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/Brandchartlayout"
+                    android:layout_width="207dp"
+                    android:layout_height="210dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/BrandText"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:text="남성 선호 브랜드"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/men_BrandChart"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        tools:layout_editor_absoluteX="245dp"
+                        tools:layout_editor_absoluteY="327dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Modelchartlayout"
+                    android:layout_width="207dp"
+                    android:layout_height="210dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ModelText"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:text="남성 선호 차종"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/men_ModelChart"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        tools:layout_editor_absoluteX="245dp"
+                        tools:layout_editor_absoluteY="526dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="414dp"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:id="@+id/brandButtonLayout"
+                    android:layout_width="207dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/brandButton"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:text="브랜드 선호도 참여" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/modelButtonLayout"
+                    android:layout_width="207dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/modelButton"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:text="차종 선호도 참여"
+                        android:visibility="visible"
+                        tools:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

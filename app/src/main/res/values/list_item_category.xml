@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_array">
+        <item>자유게시판</item>
+        <item>질문게시판</item>
+        <item>건의게시판</item>
+        <item>유머게시판</item>
+    </string-array>
+</resources>

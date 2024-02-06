@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ShowAndCar_app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="건의게시판">건의게시판</string>
+    <string name="검색">검색</string>
+    <string name="게시글_작성">게시글 작성</string>
+    <string name="게시물_목록">게시물 목록</string>
+    <string name="글쓰기">글쓰기</string>
+    <string name="내용을_입력하세요">내용을 입력하세요.</string>
+    <string name="제목">제목</string>
+    <string name="작성자">작성자</string>
+    <string name="작성일">작성일</string>
+    <string name="카테고리">카테고리</string>
+    <string name="질문게시판">질문게시판</string>
+    <string name="유머">유머</string>
+    <string name="이미지_업로드">이미지 업로드</string>
+    <string name="파일_업로드">파일 업로드</string>
+    <string name="베스트_게시물">베스트 게시물</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imageuploadString">이미지 업로드</string>
+    <string name="carNameEdit">자동차 이름</string>
+</resources>

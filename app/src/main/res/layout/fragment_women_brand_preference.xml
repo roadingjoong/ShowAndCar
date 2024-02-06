@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Wpreference_part">
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/Brandchartlayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BrandText"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:text="여성 선호 브랜드"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/women_BrandChart"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="245dp"
+                tools:layout_editor_absoluteY="327dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preferencelayout"
+            android:layout_width="360dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="50dp">
+
+                <CheckBox
+                    android:id="@+id/select_brand1"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="현대"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand2"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="기아"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand3"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="쌍용"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand4"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="르노"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand5"
+                    android:layout_width="80dp"
+                    android:layout_height="48dp"
+                    android:text="제네시스"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="50dp">
+
+                <CheckBox
+                    android:id="@+id/select_brand6"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="벤츠"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand7"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="BMW"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand8"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="아우디"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand9"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="미니"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand10"
+                    android:layout_width="80dp"
+                    android:layout_height="48dp"
+                    android:text="폭스바겐"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="50dp">
+
+                <CheckBox
+                    android:id="@+id/select_brand11"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="혼다"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand12"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="링컨"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand13"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="로터스"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand14"
+                    android:layout_width="70dp"
+                    android:layout_height="48dp"
+                    android:text="랜드로버"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/select_brand15"
+                    android:layout_width="80dp"
+                    android:layout_height="48dp"
+                    android:text="롤스로이스"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/brandprebutton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="침여" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

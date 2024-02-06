@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/menwomenLayout"
+            android:layout_width="400dp"
+            android:layout_height="450dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/menChartLayout"
+                android:layout_width="200dp"
+                android:layout_height="450dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="228dp"
+                tools:layout_editor_absoluteY="223dp">
+
+                <TextView
+                    android:id="@+id/menText"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:text="남성 선호"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/men_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/men"
+                    tools:srcCompat="@drawable/men"
+                    tools:visibility="visible"></ImageView>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/men_BrandChart"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    tools:layout_editor_absoluteX="245dp"
+                    tools:layout_editor_absoluteY="327dp" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/men_ModelChart"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    tools:layout_editor_absoluteX="245dp"
+                    tools:layout_editor_absoluteY="526dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/womenChartLayout"
+                android:layout_width="200dp"
+                android:layout_height="450dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="223dp">
+
+                <TextView
+                    android:id="@+id/womenText"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:text="여성 선호"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/women_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/women"
+                    tools:srcCompat="@drawable/women"
+                    tools:visibility="visible"></ImageView>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/women_BrandChart"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    tools:layout_editor_absoluteX="245dp"
+                    tools:layout_editor_absoluteY="327dp" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/women_ModelChart"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    tools:layout_editor_absoluteX="245dp"
+                    tools:layout_editor_absoluteY="526dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reference_Button"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="선호도 참여"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

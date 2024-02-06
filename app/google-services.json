@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "60792758486",
+    "project_id": "showandcarp",
+    "storage_bucket": "showandcarp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60792758486:android:cac4b02a6e5e0f700ba977",
+        "android_client_info": {
+          "package_name": "com.joljak.showandcar_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCctkwCHoT5bjyQOiXcOCVGbkanrhOuwDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

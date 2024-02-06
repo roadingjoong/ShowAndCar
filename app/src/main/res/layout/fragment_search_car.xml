@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="373dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/search_view_bg"
+            android:gravity="bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:queryHint="모델명을 입력하세요" />
+
+        <LinearLayout
+            android:layout_width="407dp"
+            android:layout_height="433dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="71dp">
+
+                <TextView
+                    android:layout_width="103dp"
+                    android:layout_height="49dp"
+                    android:text="희망가격"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/pricewhat"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="단위 : 만원" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="414dp"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text="차종"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:id="@+id/checkSedan"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:text="세단" />
+
+                <CheckBox
+                    android:id="@+id/checkSUV"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:text="SUV" />
+
+                <CheckBox
+                    android:id="@+id/checkCoupe"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:text="쿠페" />
+
+                <CheckBox
+                    android:id="@+id/checkHatchback"
+                    android:layout_width="72dp"
+                    android:layout_height="70dp"
+                    android:text="해치백" />
+            </LinearLayout>
+
+            <!-- 브랜드 -->
+            <LinearLayout
+                android:layout_width="414dp"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text="브랜드"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:id="@+id/checkHyundai"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:text="현대" />
+
+                <CheckBox
+                    android:id="@+id/checkKia"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:text="기아" />
+
+                <CheckBox
+                    android:id="@+id/checkRenault"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:text="르노" />
+
+                <CheckBox
+                    android:id="@+id/checkSsangYong"
+                    android:layout_width="72dp"
+                    android:layout_height="70dp"
+                    android:text="쌍용" />
+
+                <CheckBox
+                    android:id="@+id/checkLincoln"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:text="링컨" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="414dp"
+                android:layout_height="70dp">
+
+                <CheckBox
+                    android:id="@+id/checkGenesis"
+                    android:layout_width="85dp"
+                    android:layout_height="70dp"
+                    android:text="제네시스" />
+
+                <CheckBox
+                    android:id="@+id/checkMercedes"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:text="벤츠" />
+
+                <CheckBox
+                    android:id="@+id/checkAudi"
+                    android:layout_width="72dp"
+                    android:layout_height="70dp"
+                    android:text="아우디" />
+
+                <CheckBox
+                    android:id="@+id/checkBMW"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text="BMW" />
+
+                <CheckBox
+                    android:id="@+id/checkVolkswagen"
+                    android:layout_width="85dp"
+                    android:layout_height="70dp"
+                    android:text="폭스바겐" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="414dp"
+                android:layout_height="70dp">
+
+                <CheckBox
+                    android:id="@+id/checkMini"
+                    android:layout_width="65dp"
+                    android:layout_height="70dp"
+                    android:text="미니" />
+
+                <CheckBox
+                    android:id="@+id/checkRollsRoyce"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:text="롤스로이스" />
+
+                <CheckBox
+                    android:id="@+id/checkLandRover"
+                    android:layout_width="85dp"
+                    android:layout_height="70dp"
+                    android:text="랜드로버" />
+
+                <CheckBox
+                    android:id="@+id/checkLotus"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:text="로터스" />
+
+                <CheckBox
+                    android:id="@+id/checkHonda"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:text="혼다" />
+            </LinearLayout>
+
+            <!-- 연료 -->
+            <LinearLayout
+                android:layout_width="414dp"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text="연료"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:id="@+id/checkGasoline"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:text="가솔린" />
+
+                <CheckBox
+                    android:id="@+id/checkDiesel"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text="디젤" />
+
+                <CheckBox
+                    android:id="@+id/checkElectric"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text="전기" />
+
+                <CheckBox
+                    android:id="@+id/checkHybrid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="하이브리드" />
+
+            </LinearLayout>
+
+            <!--        <Button-->
+            <!--            android:id="@+id/search_Button"-->
+            <!--            android:layout_width="150dp"-->
+            <!--            android:layout_height="60dp"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:text="조건 검색" />-->
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="410dp"
+            android:layout_height="166dp"
+            android:layout_marginTop="504dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/map_Button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="684dp"
+            android:layout_marginEnd="16dp"
+            android:text="주변 매장"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
